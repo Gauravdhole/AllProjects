@@ -1,0 +1,23 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class dataDriven {
+public static void main(String[] args) throws FileNotFoundException {
+	
+	
+	String ExcelfilePath ="C:\\Users\\gaura\\OneDrive\\Desktop\\Book1.xlsx";
+	
+	
+	FileInputStream file =new  FileInputStream(ExcelfilePath);
+	
+	
+	XSSFWorkbook  Workbook =new   XSSFWorkbook(file);
+   int sheets	 =Workbook.getNumberOfSheets();
+	
+   
+   
+}
+}

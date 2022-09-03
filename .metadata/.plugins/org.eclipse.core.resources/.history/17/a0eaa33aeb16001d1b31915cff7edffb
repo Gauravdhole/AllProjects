@@ -1,0 +1,24 @@
+package pageobject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import resoces.base;
+
+public class LandkingPage  extends base{
+ public WebDriver driver;
+ By singin=By.xpath("//a[@id='nav-link-accountList']");
+
+ 
+ public LandkingPage () {
+	 this.driver=driver;
+ }
+ 
+ 
+public  WebElement getLogin() {
+	 return  driver.findElement(singin);
+	
+}
+
+}

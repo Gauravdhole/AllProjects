@@ -1,0 +1,46 @@
+package hacked;
+
+import javax.xml.xpath.XPath;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class loginKite {
+WebDriver driver;
+	public  loginKite  (WebDriver driver) {
+		
+		this.  driver =driver;
+	}
+	
+	
+	
+	By  logoZeroda =By.xpath("//img[@alt='Kite']");
+	By  namekitElement = By.xpath("//h2[normalize-space()='Login to Kite']");
+	By  usernam =By.xpath("//input[@id='userid']") ;
+	By  password =By .xpath("//input[@id='password']");
+	By  ShowForget =By.xpath("//a[@class='text-light forgot-link']");
+	By  textzeroda = By.xpath(" //img[@alt='Zerodha']") ;
+	By  dontHaveacount =By.xpath("//a[@class='text-light']"); 
+	By  showLebal =By.xpath("//p[@class='text-light text-xxsmall dim']");
+	
+	
+	
+	public WebElement verifylogoZeroda() {
+		 return   driver.findElement(  logoZeroda) ;       
+		
+	}
+	public WebElement VerifynamekitElement() {
+		 return  driver.findElement(namekitElement);
+	}
+	public    WebElement verifyusernam() {
+		return   driver.findElement(usernam);
+		
+	}
+	
+	public WebElement verifypassword() {
+	 return	 driver.findElement(password);
+		
+	}
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ABC</groupId>
+	<artifactId>TheMAvenproject-java</artifactId>
+
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>ABC</groupId>
+		<artifactId>TheMAvenproject-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../TheMAvenproject-parent</relativePath>
+	</parent>
+
+	<!-- add here the project dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>com.ibm.etools.mft.jcn</groupId>
+			<artifactId>javacompute</artifactId>
+			<version>7.0.200.v20101130_1524</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.etools.mft.jcn</groupId>
+			<artifactId>jplugin2</artifactId>
+			<version>7.0.0.v20091028_2100</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>

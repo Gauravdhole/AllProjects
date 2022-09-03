@@ -1,0 +1,42 @@
+package pages;
+
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import base.testBase;
+
+public class loginpage extends testBase {
+
+	@FindBy(xpath = " //h2[normalize-space()='Login to Kite']")
+	private  WebElement frontlogo;
+
+	@FindBy(xpath = "//input[@id='userid']")
+	private 	WebElement useridText;
+	@FindBy(xpath = "//input[@id='password']")
+	private WebElement passwordtext;
+	@FindBy(xpath = " //button[@type='submit']")
+	private WebElement loginPage;
+	@FindBy(xpath = "//a[text()='Forgot user ID or password?']")
+	private WebElement forgetUsernam;
+	@FindBy(xpath = "//a[@class='text-light']")
+	private WebElement idontHaveAcount;
+	@FindBy(xpath = "//img[@alt='Kite']")
+	private WebElement logo;
+
+	public loginpage() {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void loginZerodaapp() throws InterruptedException {
+		useridText.sendKeys("gaurav");
+		passwordtext.sendKeys("gaurav111996");
+		loginPage.click();
+		Thread.sleep(100);
+
+	}
+
+}

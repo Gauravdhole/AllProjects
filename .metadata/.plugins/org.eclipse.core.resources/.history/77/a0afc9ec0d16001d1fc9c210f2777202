@@ -1,0 +1,62 @@
+package Testcase;
+
+import java.sql.Driver;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import base.testBase;
+import pages.loginpage;
+
+public class loginpagetest extends testBase {
+	loginpage pg;
+	@BeforeMethod
+	
+	public void Bmethod() {
+		loginpage pg;
+		initalization();
+		 pg=new loginpage();
+		
+	}
+
+	@Test
+	
+	public void CaseTest1() {
+		loginpage pg = new loginpage();
+		pg.verifyuseridText().sendKeys("gaurav11");
+		 
+	}
+
+	@Test
+	public void CaseTest2() {
+		loginpage pg = new loginpage();
+		pg.verifypasswordtext().sendKeys("gaurav11");
+
+	}
+
+//	@Test
+//	public void CaseTest3() {
+//		
+//
+//	}
+//
+//   
+//	@Test
+//	public void CaseTest4() {
+//
+//	}
+//
+//	@Test
+//	public void CaseTest5() {
+//
+//	}
+//
+//	@Test
+//	public void CaseTest6() {
+//
+//	}
+
+	
+     
+}

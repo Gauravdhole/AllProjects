@@ -1,0 +1,64 @@
+package Testcase;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.hc.client5.http.psl.PublicSuffixMatcher;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import base.testBase;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.loginpage;
+
+public class demotestcase1 {
+
+	@Test
+	public void testcase1() {
+
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+
+		driver.close();
+	}
+
+	@Test
+	public void testcase2() {
+
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+
+		loginpage rd = new loginpage(driver);
+		rd.method1Username().sendKeys("Gaurav");
+		rd.method2password().sendKeys("11121996");
+		rd.method3loginpage().click();
+		driver.close();
+
+	}
+
+	@Test
+	public void testcase3() {
+
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+
+		loginpage rd = new loginpage(driver);
+		rd.method3forgetUsernamElement().click();
+		driver.close();
+	}
+
+	@Test
+	public void testcase4() {
+
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+
+		loginpage rd = new loginpage(driver);
+		rd.method4idontHaveAcountElement().click();
+		driver.close();
+	}
+
+}

@@ -1,0 +1,30 @@
+package testcase1;
+
+import java.security.PublicKey;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import objectrepositry.redifLoginPage;
+
+public class loginapplication {
+	
+	
+	@Test
+	public void logIn() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gaura\\eclipse-workspace\\JAVA_selenium\\\\src\\snippet\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		redifLoginPage td = new redifLoginPage(driver);
+		
+		td.VeriFyUsernal().sendKeys("gauravdhole2016@gmail.com");
+		
+		td.verfiypassword().sendKeys("11121996");
+		
+		td.sumit().click();
+		
+	}
+
+}

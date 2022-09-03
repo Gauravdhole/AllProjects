@@ -1,0 +1,75 @@
+package Testcase;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import base.testBase;
+import pages.loginpage;
+
+public class loginpagetest extends testBase {
+	loginpage login;
+
+	@BeforeTest
+
+	public void setup() {
+
+		initalization();
+		login = new loginpage();
+
+	}
+
+	@Test
+
+	public void testcase1() {
+		initalization();
+		String result = login.verifyfrontlogo();
+		System.out.println(result);
+
+	}
+
+	@Test
+
+	public void testcase2() {
+		initalization();
+		boolean result1 = login.verifylogo();
+		System.out.println(result1);
+
+	}
+
+	@Test
+
+	public void testcase3() {
+		Object result2 = login.verifyidontHaveAcount();
+		System.out.println(result2);
+	}
+
+	@Test
+
+	public void testcase4() {
+		initalization();
+		Object result3 = login.verifyforgetUsernam();
+		System.out.println(result3);
+	}
+
+	@Test
+
+	public void testcase5() {
+		initalization();
+		Object result4 = login.verifyloginPage();
+		System.out.println(result4);
+	}
+
+	@Test
+	public void testcase6() {
+		initalization();
+		boolean result5 = login.verifypasswordtext();
+		System.out.println(result5);
+	}
+	
+
+}

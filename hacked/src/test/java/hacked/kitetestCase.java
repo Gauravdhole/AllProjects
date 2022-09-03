@@ -1,0 +1,77 @@
+package hacked;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class kitetestCase {
+	@Test
+	public void alltestcase() {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gaura\\eclipse-workspace\\JAVA_selenium\\\\src\\snippet\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+		loginKite rd = new loginKite(driver);
+
+		driver.close();
+
+	}
+
+	@Test
+	public void testcase2() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gaura\\eclipse-workspace\\JAVA_selenium\\\\src\\snippet\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+		loginKite rd = new loginKite(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+		rd.verifylogoZeroda().isSelected();
+		driver.close();
+
+	}
+
+	@Test
+	public void testcase3() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gaura\\eclipse-workspace\\JAVA_selenium\\\\src\\snippet\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+		loginKite rd = new loginKite(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+		rd.VerifynamekitElement().isSelected();
+		driver.close();
+
+	}
+	
+
+	@Test
+	public void testcase4() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gaura\\eclipse-workspace\\JAVA_selenium\\\\src\\snippet\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+		loginKite rd = new loginKite(driver);
+		rd.verifyusernam().isSelected();
+		driver.close();
+
+	}
+
+	@Test
+	public void testcase5() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gaura\\eclipse-workspace\\JAVA_selenium\\\\src\\snippet\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://kite.zerodha.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+		loginKite rd = new loginKite(driver);
+		rd.verifypassword().isSelected();
+		driver.close();
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package pattens;
+
+public class allExqample {
+public static void main(String[] args) {
+	
+	
+	int n ;
+	pattens2( n=4);
+	pattens1( n=4);
+}
+
+
+static void pattens2(int n) {
+	for (int row = 1; row <= n; row++) {
+		for (int col = 1; col <=n; col++) {
+			System.out.println("* ");
+		}
+		System.out.println();
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static void pattens1(int n) {
+	for (int row = 1; row <= n; row++) {
+		for (int col = 1; col <=row; col++) {
+			System.out.println("* ");
+		}
+		System.out.println();
+	}
+  }
+ }

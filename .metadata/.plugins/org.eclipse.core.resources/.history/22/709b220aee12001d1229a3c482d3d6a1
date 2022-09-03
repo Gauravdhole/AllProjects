@@ -1,0 +1,87 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class dataDriven {
+
+	// identify testcase colunm by scannes first row
+
+	public static void main(String[] args) throws IOException
+	{
+	 String Inter      	="C:\\Users\\gaura\\OneDrive\\Desktop\\testdata.xlsx";
+
+		FileInputStream   file = new FileInputStream (Inter );
+
+		XSSFWorkbook Workbook = new XSSFWorkbook(file);
+
+		int sheet = Workbook.getNumberOfSheets();
+		for (int i = 0; i < sheet; i++)
+		{
+			Workbook.getSheetName(i).equalsIgnoreCase("Sheet1");
+			{
+
+				XSSFSheet Sheet = Workbook.getSheetAt(i);
+				Iterator<Row> rowss = Sheet.iterator();
+				Row Firstrow = rowss.next();
+				Iterator<Cell> ce = Firstrow.cellIterator();
+				
+				int k =0;
+				int coloum = 0;
+
+				while (ce.hasNext()) 
+				{
+					Cell value = ce.next();
+					if (value.getStringCellValue().equalsIgnoreCase("Date2")) {
+						coloum = k;
+					}
+                   k++;
+				}
+
+				System.out.println(coloum);
+				while(rowss.hasNext()){
+					Row r=rowss.next();
+					if(r.getCell(coloum).getStringCellValue().equalsIgnoreCase("purches"));
+					
+					Iterator<Cell> cv = r.cellIterator();
+					while(cv.hasNext())
+					{
+					System.out.println(	cv.next().getStringCellValue());
+					}					
+				}				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+			
+		}
+	}}

@@ -1,0 +1,32 @@
+package Testcase;
+
+
+import org.testng.annotations.Test;
+
+import base.testBase;
+import pages.loginpage;
+
+
+
+public class demotestcase1 extends testBase {
+	loginpage login= new loginpage();
+@Test
+public void test1() {
+	
+	initalization(driver);
+	System.out.println("Application open sucessfully");
+	driver.close();
+	
+}
+@Test
+public void verifylogoElementTest() {
+	initalization(driver);
+	  boolean result= login.verifypasswordtextElement();
+	System.out.println(result);
+}
+
+
+
+
+
+}

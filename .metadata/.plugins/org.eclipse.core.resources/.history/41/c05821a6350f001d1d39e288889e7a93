@@ -1,0 +1,14 @@
+package pattens;
+
+public class allExqample {
+public static void main(String[] args) {
+	pattens(4);
+}
+static void pattens(int n) {
+	for (int row = 1; row < n; row++) {
+		for (int col = 1; col <=row; col++) {
+			System.out.println("* ");
+		}
+	}
+}
+}

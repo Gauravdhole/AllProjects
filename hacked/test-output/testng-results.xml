@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-06T19:01:11 IST" name="Suite" finished-at="2022-08-06T19:01:21 IST" duration-ms="10447">
+    <groups>
+    </groups>
+    <test started-at="2022-08-06T19:01:11 IST" name="Test" finished-at="2022-08-06T19:01:21 IST" duration-ms="10447">
+      <class name="hacked.kitetestCase">
+        <test-method signature="alltestcase()[pri:0, instance:hacked.kitetestCase@7f0eb4b4]" started-at="2022-08-06T19:01:11 IST" name="alltestcase" finished-at="2022-08-06T19:01:14 IST" duration-ms="2873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alltestcase -->
+        <test-method signature="testcase2()[pri:0, instance:hacked.kitetestCase@7f0eb4b4]" started-at="2022-08-06T19:01:14 IST" name="testcase2" finished-at="2022-08-06T19:01:16 IST" duration-ms="1837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method signature="testcase3()[pri:0, instance:hacked.kitetestCase@7f0eb4b4]" started-at="2022-08-06T19:01:16 IST" name="testcase3" finished-at="2022-08-06T19:01:18 IST" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method signature="testcase4()[pri:0, instance:hacked.kitetestCase@7f0eb4b4]" started-at="2022-08-06T19:01:18 IST" name="testcase4" finished-at="2022-08-06T19:01:20 IST" duration-ms="1935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method signature="testcase5()[pri:0, instance:hacked.kitetestCase@7f0eb4b4]" started-at="2022-08-06T19:01:20 IST" name="testcase5" finished-at="2022-08-06T19:01:21 IST" duration-ms="1883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+      </class> <!-- hacked.kitetestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

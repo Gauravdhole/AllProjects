@@ -1,0 +1,15 @@
+package Projects;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import resoces.base;
+
+public class homepagetest extends base {
+@Test
+public void basePageNavigation() throws IOException {
+driver=	initializedDriver();
+	driver.get("https://www.amazon.in/");
+}
+}

@@ -1,0 +1,15 @@
+package Testcase;
+
+import org.apache.hc.client5.http.psl.PublicSuffixMatcher;
+import org.testng.annotations.Test;
+
+import base.testBase;
+
+public class demotestcase1  extends  testBase {
+
+	@Test
+	public void testcase1() {
+   initalization(driver);
+	}
+
+}

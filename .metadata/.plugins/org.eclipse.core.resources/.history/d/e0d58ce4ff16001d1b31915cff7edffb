@@ -1,0 +1,110 @@
+package logintestcase;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import baseclass.testbase;
+import loginpages.loginpage;
+//import pageclass.logginpage;
+
+public class loginTest extends testbase {
+
+	@Test
+	public void verifyfrontlogo1Test() throws IOException {
+		driver = initalization();
+		driver.get("https://kite.zerodha.com/");
+		loginpage login = new loginpage(driver);
+
+		login.verifyfrontlogo1().click();
+
+	}
+	
+	
+	@Test
+	
+	public void verifyuseridText() throws IOException {
+		driver = initalization();
+		driver.get("https://kite.zerodha.com/");
+		loginpage login = new loginpage(driver);
+
+		login.verifyuseridText().click();
+
+	}
+	
+	
+   @Test
+	
+	public void verifyPassword() throws IOException {
+		driver = initalization();
+		driver.get("https://kite.zerodha.com/");
+		loginpage login = new loginpage(driver);
+
+		login.verifyPassword().click();
+
+	}
+	@Test
+	
+	public void verifyforgetUsernam() throws IOException {
+		driver = initalization();
+		driver.get("https://kite.zerodha.com/");
+		loginpage login = new loginpage(driver);
+
+		login.verifyforgetUsernam().click();
+
+	}@Test
+	
+	public void verifylogo() throws IOException {
+		driver = initalization();
+		driver.get("https://kite.zerodha.com/");
+		loginpage login = new loginpage(driver);
+
+		login.verifylogo().click();
+
+	}
+
+	
+}@Test
+
+public void verifyidontHaveAcount() throws IOException {
+	driver = initalization();
+	driver.get("https://kite.zerodha.com/");
+	loginpage login = new loginpage(driver);
+
+	login.verifyidontHaveAcount().click();
+
+}
+//	
+//	@Test
+//	
+//	public void test1() {
+//	
+//	 String result1 = login.verifyfrontlogo();
+//		System.out.println(result1);
+//	}
+//	@Test
+//	
+//	public void test2() {
+//		 boolean result2 = login.verifylogo();
+//		 System.out.println(result2);
+//	}
+//	@Test
+//	
+//	public void test3() {
+//		  Object result3 = login. verifyforgetUsernam();
+//		System.out.println(result3);
+//	}
+//	@Test
+//	
+//	public void test4() {
+//		 Object result4 = login.verifyloginPage() ;
+//		System.out.println(result4 );
+//	}
+//	
+//	@Test
+//	public void test5() {
+//		  boolean result5 = login.  verifypasswordtext();
+//		  System.out.println( result5);
+//	}
+}

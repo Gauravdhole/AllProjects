@@ -1,0 +1,21 @@
+package objectrepositry;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class redifLoginPage {
+	
+WebDriver driver;
+
+public void  redifLoginPage(WebDriver driver) 
+{
+	this.driver=driver;
+	
+}
+
+    By  username= By.xpath(" //input[@id='email']");
+    By  password= By.xpath("  //input[@id='pass']");
+    By  login= By.xpath("   //button[@id='u_0_5_Br']");
+
+	
+}

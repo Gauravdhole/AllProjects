@@ -1,0 +1,76 @@
+package loginpages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import baseclass.testbase;
+
+public class loginpage  extends testbase{
+
+	public WebDriver driver;
+	
+	
+	
+	By frontlogo =By.xpath("//h2[normalize-space()='Login to Kite']")
+	
+	
+	
+//	@FindBy(xpath = " //h2[normalize-space()='Login to Kite']")
+//	private WebElement frontlogo;
+//
+//	@FindBy(xpath = "//input[@id='userid']")
+//	private WebElement useridText;
+//
+//	@FindBy(xpath = "//input[@id='password']")
+//	private WebElement passwordtext;
+//
+//	@FindBy(xpath = " //button[@type='submit']")
+//	private WebElement loginPage;
+//
+//	@FindBy(xpath = "//a[text()='Forgot user ID or password?']")
+//	private WebElement forgetUsernam;
+//
+//	@FindBy(xpath = "//a[@class='text-light']")
+//	private WebElement idontHaveAcount;
+//
+//	@FindBy(xpath = "//img[@alt='Kite']")
+//	private WebElement logo;
+
+	
+	public WebElement verifyfrontlogo() {
+		return driver.findElement(frontlogo);
+	}
+//	public loginpage() {
+//		PageFactory.initElements(driver, this);
+//	}
+//
+//	
+//
+//	public String verifyfrontlogo() {
+//		return frontlogo.getText();
+//	}
+//
+//	public boolean verifylogo() {
+//		return logo.isEnabled();
+//	}
+//
+//	public Object verifyidontHaveAcount() {
+//		return idontHaveAcount.isSelected();
+//	}
+//
+//	public Object verifyforgetUsernam() {
+//		return forgetUsernam.isDisplayed();
+//	}
+//
+//	public Object verifyloginPage() {
+//		return loginPage.isEnabled();
+//	}
+//
+//	public boolean verifypasswordtext() {
+//		return passwordtext.isSelected();
+//	}
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [practces]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Method(failed)">
+    <classes>
+      <class name="testNg_day_1.day5">
+        <methods>
+          <include name="LoginApihomeLoan"/>
+          <include name="webloginhomeloan"/>
+        </methods>
+      </class> <!-- testNg_day_1.day5 -->
+    </classes>
+  </test> <!-- Method(failed) -->
+</suite> <!-- Failed suite [practces] -->

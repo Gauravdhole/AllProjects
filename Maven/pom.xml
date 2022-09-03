@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.chinagoods.framework.thinkcloud</groupId>
+        <artifactId>think-cloud-build</artifactId>
+        <version>3.1.0.RELEASE</version>
+    </parent>
+    <groupId>ProjectMaven</groupId>
+    <artifactId>Maven</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <rversion>3.1.0.RELEASE</rversion>
+    </properties>
+    <!--OWN Dependencies -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>Maven-domain</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>Maven-repo-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>Maven-biz-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>Maven-manager-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>Maven-commons</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+  <modules>
+    <module>Maven-domain</module>
+    <module>Maven-commons</module>
+    <module>Maven-repo-api</module>
+    <module>Maven-biz-api</module>
+    <module>Maven-manager-api</module>
+    <module>Maven-biz-provider</module>
+    <module>Maven-repo-provider</module>
+    <module>Maven-manager-provider</module>
+    <module>Maven-ctl</module>
+    <module>Maven-apiserver</module>
+    <module>Maven-generator</module>
+    <module>Maven-all</module>
+  </modules>
+</project>

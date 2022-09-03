@@ -1,0 +1,41 @@
+server:
+  port: 10101
+
+logging:
+  level:
+    root: trace
+spring:
+  application:
+    name: think-cloud-quickstart-apiserver
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    sentinel:
+      datasource:
+
+    gateway:
+      routes:
+        - id: QS
+          uri: lb://think-cloud-quickstart-ctl
+          predicates:
+            - Path=/qs/**
+          filters:
+            - StripPrefix=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

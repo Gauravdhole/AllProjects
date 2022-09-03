@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ABC</groupId>
+	<artifactId>TheMAvenproject-bar</artifactId>
+
+	<packaging>iib-bar</packaging>
+
+	<parent>
+		<groupId>ABC</groupId>
+		<artifactId>TheMAvenproject-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../TheMAvenproject-parent</relativePath>
+	</parent>
+
+	<properties>
+		<iib.excludeArtifactsPattern>**/SUB_*.msgflow</iib.excludeArtifactsPattern>
+	</properties>
+
+	<!-- add here the project dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>ABC</groupId>
+			<artifactId>TheMAvenproject-flow</artifactId>
+			<type>zip</type>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

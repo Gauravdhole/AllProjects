@@ -1,0 +1,42 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import base.testBase;
+
+public class loginpage extends testBase {
+
+	@FindBy(xpath = "//input[@id='userid']")
+	private WebElement useridTextElement;
+	@FindBy(xpath = "//input[@id='password']")
+	private WebElement passwordtextElement;
+	@FindBy(xpath = "//button[@class='button-orange wide']")
+	private WebElement loginPagElement;
+	@FindBy(xpath = "//a[text()='Forgot user ID or password?']")
+	private WebElement forgetUsernamElement;
+	@FindBy(xpath = "//a[@class='text-light']")
+	private WebElement idontHaveAcountElement;
+	@FindBy(xpath = "//img[@alt='Kite']")
+	private WebElement logoElement;
+
+	public void useridText() {
+		PageFactory.initElements(driver, this);
+
+	}
+
+	public boolean verifylogoelemet() {
+		 return logoElement.isEnabled();
+	}
+	public boolean  verifylogoElement()   {
+		   return logoElement.isEnabled();
+	}
+   public Object verifyloginPagElement() {
+	   loginPagElement.click();
+	return loginPagElement  ;
+   }
+	
+	
+	
+}
